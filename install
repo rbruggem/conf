@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in `ls -c1 -a | egrep -v "^\.$|^\.\.$|^\.git$|README|install" | xargs`
+do
+    cp -R $file ~/
+done
