@@ -1,0 +1,7 @@
+! Default settings
+
+*background: #000000
+*foreground: #efefcf
+*savelines:  15000
+
+xterm*eightBitInput: false

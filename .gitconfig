@@ -1,0 +1,11 @@
+[user]
+	name = Roberto Bruggemann
+	email = mail@robertobruggemann.com
+[color]
+	diff = always
+[diff]
+	external = /home/rbruggem/bin/gitmeld
+[alias]
+    st = status -s
+    br = branch
+    co = checkout

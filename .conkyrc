@@ -1,0 +1,12 @@
+background no
+cpu_avg_samples 2
+net_avg_samples 2
+no_buffers yes
+out_to_console yeS
+out_to_stderr no
+update_interval 1.0
+uppercase no
+use_spacer none
+
+TEXT
+vol ${exec  amixer sget Master | grep "Mono: Playback" | awk '{print $4}' | sed 's/\[//g' | sed 's/\]//g'} :: ip ${addr eth0} :: uptime $uptime :: cpu $cpu% :: ram $memperc% $mem/$memmax :: ${time %A %F %H:%M:%S}
