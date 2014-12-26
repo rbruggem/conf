@@ -3,5 +3,7 @@
 *background: #000000
 *foreground: #efefcf
 *savelines:  15000
+*customization: -color
 
 xterm*eightBitInput: false
+xterm*termName: xterm-256color
