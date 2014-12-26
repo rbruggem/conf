@@ -1,11 +1,18 @@
 [user]
-	name = Roberto Bruggemann
-	email = mail@robertobruggemann.com
-[color]
-	diff = always
-[diff]
-	external = /home/rbruggem/bin/gitmeld
+name = Roberto Bruggemann
+email = mail@robertobruggemann.com
+[branch]
+autosetuprebase = always
+[core]
+editor = vim
+whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [alias]
-    st = status -s
-    br = branch
-    co = checkout
+st = status -s
+co = checkout
+re = reset
+br = branch
+lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[diff]
+external = ~/bin/gitmeld
+[color]
+ui = false
