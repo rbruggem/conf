@@ -56,5 +56,4 @@ set statusline+=\ %m            "modified flag
 set statusline+=\ %r            "read only flag
 set statusline+=\ %y            "filetype
 set statusline+=%=              "left/right separator
-set statusline+=row:%l/%L\ (%P) "cursor line/total line and percent
-set statusline+=\ col:\%c       "cursor column
+set statusline+=%l:%c           "cursor row:col
