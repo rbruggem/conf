@@ -50,6 +50,8 @@ hi SignColumn ctermbg=232
 au BufReadPost *.mustache set syntax=html
 au BufReadPost *.jinja set syntax=html
 
+execute pathogen#infect()
+
 " statusline
 set statusline=%t               "tail of the filename
 set statusline+=\ %m            "modified flag
