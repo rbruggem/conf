@@ -16,3 +16,5 @@ lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen
 tool = vimdiff
 [difftool]
 prompt = false
+[log]
+decorate=auto
