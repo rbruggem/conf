@@ -37,7 +37,9 @@ highlight SpecialKey ctermfg=DarkGrey
 filetype on
 filetype plugin on
 
-map  <F2> :!git diff %<CR>
+" vim fugitive
+map <F2> :Gstatus<CR>
+map <F3> :Gdiff<CR>
 
 match ErrorMsg '\%>80v.\+'
 
