@@ -10,6 +10,9 @@ fi
 PATH=$PATH:~/bin
 export PATH
 
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+export LD_LIBRARY_PATH
+
 export EDITOR=vi
 
 alias grep='grep --color=auto'
