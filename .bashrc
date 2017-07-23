@@ -18,6 +18,12 @@ export EDITOR=vi
 # required to run android studio with dwm (see https://wiki.haskell.org/Xmonad/Frequently_asked_questions)
 export _JAVA_AWT_WM_NONREPARENTING="1"
 
+# android studio
+export ANDROID_HOME=${HOME}/Android/Sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:/usr/local/android-studio/bin
+
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias sl='ls --color=auto'
