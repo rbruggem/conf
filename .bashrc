@@ -15,18 +15,15 @@ export LD_LIBRARY_PATH
 
 export EDITOR=vi
 
-# required to run android studio with dwm (see https://wiki.haskell.org/Xmonad/Frequently_asked_questions)
-export _JAVA_AWT_WM_NONREPARENTING="1"
-
-# android studio
-export ANDROID_HOME=${HOME}/Android/Sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-export PATH=${PATH}:/usr/local/android-studio/bin
+if [[ -e /etc/bash_completion.d/git-completion.bash ]]; then
+    . /etc/bash_completion.d/git-completion.bash
+fi
 
 # go
+export GOROOT=/usr/local/go
 export GOPATH=${HOME}/src/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
