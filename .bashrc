@@ -15,9 +15,11 @@ export LD_LIBRARY_PATH
 
 export EDITOR=vi
 
-if [[ -e /etc/bash_completion.d/git-completion.bash ]]; then
-    . /etc/bash_completion.d/git-completion.bash
-fi
+# bash completion
+source /etc/bash_completion
+for file in /etc/bash_completion.d/*; do
+    source "$file" > /dev/null 2>&1
+done
 
 # go
 export GOROOT=/usr/local/go

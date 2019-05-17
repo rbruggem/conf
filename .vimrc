@@ -6,8 +6,8 @@ set number
 set ts=4
 set shiftwidth=4
 set showmatch
-set ruler
 set paste
+set ruler
 set mousemodel=extend
 set mouse=r
 set nocompatible
@@ -18,6 +18,8 @@ set title
 set nobackup
 set noswapfile
 set shell=/bin/bash
+
+set autoindent
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
