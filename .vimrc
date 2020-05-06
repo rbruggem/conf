@@ -39,10 +39,6 @@ highlight SpecialKey ctermfg=DarkGrey
 filetype on
 filetype plugin on
 
-" vim fugitive
-map <F2> :Gstatus<CR>
-map <F3> :Gdiff<CR>
-
 match ErrorMsg '\%>80v.\+'
 
 " overwrite
@@ -50,11 +46,14 @@ hi CursorLine cterm=NONE ctermbg=darkgrey guibg=darkgray
 hi Search cterm=NONE ctermfg=white ctermbg=cyan
 hi SignColumn ctermbg=232
 
-" syntax highlighting
-au BufReadPost *.mustache set syntax=html
-au BufReadPost *.jinja set syntax=html
-
 execute pathogen#infect()
+
+" vim fugitive
+map <F2> :10Gstatus<CR>
+map <F3> :Gdiff<CR>
+
+" ctrlp
+map <C-l> :CtrlPBuffer<CR>
 
 " statusline
 set statusline=%t               "tail of the filename
