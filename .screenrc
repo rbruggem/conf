@@ -7,4 +7,5 @@ nethack on
 altscreen on
 vbell off
 defscrollback 10000
-caption always "%{=b dK} %-w%{=b dG}%n %t%{-}%+w %-= %{=b dG}[%H]"
+
+caption always "%{=b dK} %-w%{=b dG}%n %t%{-}%+w %-= %{=b dG}[%{G} %H %{W}%l %{g}] [%{W} %Y-%m-%d %0c:%s %{g}]"
