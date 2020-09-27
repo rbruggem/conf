@@ -1,3 +1,4 @@
+"basic configuration
 syntax on
 set t_Co=256
 set term=xterm-256color
@@ -13,19 +14,20 @@ set mouse=r
 set nocompatible
 set expandtab
 set laststatus=2
-"set encoding=utf-8
+set encoding=utf-8
 set title
 set nobackup
 set noswapfile
 set shell=/bin/bash
-
 set autoindent
 
+" disable arrows
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+" theme
 syntax enable
 set background=dark
 colorscheme solarized
@@ -33,12 +35,15 @@ colorscheme solarized
 set backspace=2
 set backspace=indent,eol,start
 
+" highlight special characters
 set list listchars=tab:.\ ,trail:$
 highlight SpecialKey ctermfg=DarkGrey
 
+" file type configs
 filetype on
 filetype plugin on
 
+" 80 character line klimit
 match ErrorMsg '\%>80v.\+'
 
 " overwrite
@@ -54,6 +59,7 @@ map <F3> :Gdiff<CR>
 
 " ctrlp
 map <C-l> :CtrlPBuffer<CR>
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " statusline
 set statusline=%t               "tail of the filename
@@ -62,3 +68,4 @@ set statusline+=\ %r            "read only flag
 set statusline+=\ %y            "filetype
 set statusline+=%=              "left/right separator
 set statusline+=%l:%c           "cursor row:col
+
