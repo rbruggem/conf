@@ -62,7 +62,8 @@ map <C-l> :CtrlPBuffer<CR>
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " statusline
-set statusline=%t               "tail of the filename
+set statusline=
+set statusline+=\ %f            "relative file path
 set statusline+=\ %m            "modified flag
 set statusline+=\ %r            "read only flag
 set statusline+=\ %y            "filetype
