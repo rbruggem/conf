@@ -23,7 +23,7 @@ fi
 PATH=$PATH:~/bin
 export PATH
 
-LIBRARY_PATH=/usr/local/lib
+LIBRARY_PATH=""
 
 # go
 export GOROOT=/usr/local/go
