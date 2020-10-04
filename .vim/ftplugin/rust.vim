@@ -7,3 +7,5 @@ colorscheme atom-dark
 hi StatusLine ctermbg=white ctermfg=black
 hi StatusLineNC ctermbg=white ctermfg=black
 hi VertSplit ctermbg=white ctermfg=black
+
+nmap <leader>a v<Plug>(coc-codeaction-selected)
