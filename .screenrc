@@ -8,4 +8,6 @@ altscreen on
 vbell off
 defscrollback 10000
 
+rendition so kg
+
 caption always "%{=b dK} %-w%{=b dG}%n %t%{-}%+w %-= %{=b dG}[%{G} %H %{W}%l %{g}] [%{W} %Y-%m-%d %0c:%s %{g}]"
