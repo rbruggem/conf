@@ -20,6 +20,7 @@ set nobackup
 set noswapfile
 set shell=/bin/bash
 set autoindent
+set ff=unix
 
 " disable arrows
 noremap <Up> <NOP>
