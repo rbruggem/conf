@@ -58,6 +58,9 @@ execute pathogen#infect()
 map <F2> :10Gstatus<CR>
 map <F3> :Gdiff<CR>
 
+" terminal
+nmap <leader>t :below term<CR>
+
 " ctrlp
 map <C-l> :CtrlPBuffer<CR>
 set runtimepath^=~/.vim/bundle/ctrlp.vim
