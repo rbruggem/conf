@@ -49,7 +49,7 @@ match ErrorMsg '\%>80v.\+'
 
 " overwrite
 hi CursorLine cterm=NONE ctermbg=darkgrey guibg=darkgray
-hi Search cterm=NONE ctermfg=white ctermbg=cyan
+hi Search cterm=NONE ctermfg=black ctermbg=yellow
 hi SignColumn ctermbg=232
 
 execute pathogen#infect()
