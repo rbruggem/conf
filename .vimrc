@@ -7,7 +7,6 @@ set number
 set ts=4
 set shiftwidth=4
 set showmatch
-set paste
 set ruler
 set mousemodel=extend
 set mouse=r
@@ -51,6 +50,11 @@ match ErrorMsg '\%>80v.\+'
 hi CursorLine cterm=NONE ctermbg=darkgrey guibg=darkgray
 hi Search cterm=NONE ctermfg=black ctermbg=yellow
 hi SignColumn ctermbg=232
+
+" paste mode toggle
+set pastetoggle=<F9>
+noremap  <F9>   :set invpaste paste?<CR>
+inoremap <F9>   <C-O>:set invpaste<CR>
 
 execute pathogen#infect()
 
