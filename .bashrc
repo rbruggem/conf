@@ -31,7 +31,7 @@ export GOPATH=${HOME}/src/go
 PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # rust
-. $HOME/.cargo/env
+[ -x $HOME/.cargo/env ] && . $HOME/.cargo/env
 
 # node
 export NVM_DIR="$HOME/.nvm"
