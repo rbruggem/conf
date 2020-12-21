@@ -33,6 +33,9 @@ PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 # rust
 [ -x $HOME/.cargo/env ] && . $HOME/.cargo/env
 
+# python
+[ -x $(which pyenv) ] && eval "$(pyenv init -)"
+
 # node
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
