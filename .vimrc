@@ -29,6 +29,7 @@ noremap <Right> <NOP>
 
 " theme
 syntax enable
+set re=0
 set background=dark
 colorscheme solarized
 
@@ -77,4 +78,3 @@ set statusline+=\ %r            "read only flag
 set statusline+=\ %y            "filetype
 set statusline+=%=              "left/right separator
 set statusline+=%l:%c           "cursor row:col
-
