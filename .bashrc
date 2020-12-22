@@ -38,7 +38,7 @@ PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 [ -x $HOME/.cargo/env ] && . $HOME/.cargo/env
 
 # python
-[ -x $(which pyenv) ] && eval "$(pyenv init -)"
+[ -x $HOME/.pyenv/bin/pyenv ] && eval "$HOME/.pyenv/bin/pyenv init -" > /dev/null 2>&1
 
 # node
 export NVM_DIR="$HOME/.nvm"
