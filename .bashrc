@@ -19,7 +19,9 @@ if type brew >/dev/null 2>&1  && [ -f $(brew --prefix)/etc/bash_completion ]; th
     source $(brew --prefix)/etc/bash_completion
 fi
 
-if [ -x $(which terraform) ]; then
+if command -v terraform; then
+
+    echo "asd"
     complete -C $(which terraform) terraform
 fi
 
